@@ -15,6 +15,6 @@ app.use(express.urlencoded({extended: false}))
 app.use(error)
 app.use(routes)
 
-app.listen(3001, () => {
-    console.log('Server on port 3001')
+app.listen(process.env.PORT, () => {
+    console.log('Server on port 3001' + process.env.PORT)
 })
